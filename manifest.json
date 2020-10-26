@@ -1,0 +1,18 @@
+{
+  "name": "youtube-extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "browser_action": {},
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+  }],
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "background",
+    "tabs",
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ajax.googleapis.com https://cdnjs.cloudflare.com; object-src 'self'" 
+}
