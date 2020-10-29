@@ -23,7 +23,7 @@ function processKey(event) {
   ).filter(e => e.style.display !== 'none');
   
   // Checks if input is focused
-  if (document.activeElement.tagName === 'input') {
+  if (document.activeElement.tagName === 'INPUT') {
     return;
   }
 
